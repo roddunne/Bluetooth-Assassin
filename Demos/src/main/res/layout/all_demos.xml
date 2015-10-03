@@ -44,7 +44,7 @@
       android:text="Update beacon's firmware demo"
       />
 
-  <Button
+  Button
       android:id="@+id/eddystone_demo_button"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
       android:text="Eddystone Demo"
       />
 
-  <Button
+  Button
       android:id="@+id/nearables_demo_button"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
