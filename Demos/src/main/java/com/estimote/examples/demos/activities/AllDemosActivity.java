@@ -19,7 +19,7 @@ public class AllDemosActivity extends AppCompatActivity {
     setContentView(R.layout.all_demos);
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-    toolbar.setTitle(getTitle());
+    toolbar.setTitle("Bluetooth Assassin");
 
     findViewById(R.id.distance_demo_button).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
@@ -42,13 +42,13 @@ public class AllDemosActivity extends AppCompatActivity {
         startActivity(intent);
       }
     });
-    findViewById(R.id.update_demo_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
-        intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, UpdateDemoActivity.class.getName());
-        startActivity(intent);
-      }
-    });
+//    findViewById(R.id.update_demo_button).setOnClickListener(new View.OnClickListener() {
+//      @Override public void onClick(View v) {
+//        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
+//        intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, UpdateDemoActivity.class.getName());
+//        startActivity(intent);
+//      }
+//    });
 //    findViewById(R.id.eddystone_demo_button).setOnClickListener(new View.OnClickListener() {
 //      @Override public void onClick(View v) {
 //        Intent intent = new Intent(AllDemosActivity.this, ListEddystoneActivity.class);
@@ -63,13 +63,13 @@ public class AllDemosActivity extends AppCompatActivity {
 //        startActivity(intent);
 //      }
 //    });
-
-    findViewById(R.id.sensors_demo_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
-        intent.putExtra(ListNearablesActivity.EXTRAS_TARGET_ACTIVITY, SensorsActivity.class.getName());
-        startActivity(intent);
-      }
-    });
+//
+//    findViewById(R.id.sensors_demo_button).setOnClickListener(new View.OnClickListener() {
+//      @Override public void onClick(View v) {
+//        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
+//        intent.putExtra(ListNearablesActivity.EXTRAS_TARGET_ACTIVITY, SensorsActivity.class.getName());
+//        startActivity(intent);
+//      }
+//    });
   }
 }

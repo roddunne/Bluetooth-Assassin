@@ -30,7 +30,9 @@ public class DistanceBeaconActivity extends BaseActivity {
 
   private View dotView;
   private int startY = -1;
-  private int segmentLength = -1;
+  private int segmentLength = -
+
+          1;
 
   @Override protected int getLayoutResId() {
     return R.layout.distance_view;
