@@ -24,6 +24,8 @@ app.get('/playerstats/:magic_cookie', game.getPlayerStats);
 
 app.get('/beacons', game.listBeacons);
 app.get('/players', game.listPlayers);
+app.get('/rod', game.listRod);
+app.get('/hasHandle/:handle', game.hasHandle);
 
 app.listen(3000);
 console.log('Listening on port 3000...');
