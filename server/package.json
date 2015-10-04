@@ -1,0 +1,16 @@
+{
+  "name": "bluetooth_assassin_server",
+  "version": "1.0.0",
+  "description": "WearHacks MTL 2015 project backend",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Amit Desai, Samrat Debroy, Rod Dunne",
+  "license": "ISC"
+}
