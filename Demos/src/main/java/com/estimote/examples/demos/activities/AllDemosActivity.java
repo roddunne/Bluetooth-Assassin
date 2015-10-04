@@ -21,14 +21,24 @@ public class AllDemosActivity extends AppCompatActivity {
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     toolbar.setTitle("Bluetooth Assassin");
 
-    findViewById(R.id.distance_demo_button).setOnClickListener(new View.OnClickListener() {
+//
+//    findViewById(R.id.devicelist).setOnClickListener(new View.OnClickListener() {
+//      @Override
+//      public void onClick(View v) {
+//        Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
+//        intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, DistanceBeaconActivity.class.getName());
+////        startActivity(intent);
+//      }
+//    });
+
+    findViewById(R.id.players).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
         intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, DistanceBeaconActivity.class.getName());
         startActivity(intent);
       }
     });
-    findViewById(R.id.notify_demo_button).setOnClickListener(new View.OnClickListener() {
+    findViewById(R.id.stats).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
         intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, NotifyDemoActivity.class.getName());

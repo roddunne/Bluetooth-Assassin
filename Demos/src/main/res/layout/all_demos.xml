@@ -4,66 +4,225 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+    <include layout="@layout/toolbar" android:id="@+id/toolbar" />
 
-  <include layout="@layout/toolbar" android:id="@+id/toolbar" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-  <Button
-      android:id="@+id/distance_demo_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="6dp"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
-      android:text="Distance Demo"
-      />
 
-  <Button
-      android:id="@+id/notify_demo_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
-      android:text="Notify Demo"
-      />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-  <Button
-      android:id="@+id/characteristics_demo_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
-      android:text="Change Beacon's Minor Demo"
-      />
+            <ImageView android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/beacon_gray"/>
 
-  Button
-      android:id="@+id/update_demo_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
-      android:text="Update beacon's firmware demo"
-      />
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
 
-  Button
-      android:id="@+id/eddystone_demo_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
-      android:text="Eddystone Demo"
-      />
+                <TextView
+                    android:tag="mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:text="YOU"/>
 
-  Button
-      android:id="@+id/nearables_demo_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
-      android:text="Nearables Demo"
-      />
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-  <!--<Button-->
-     <!--android:id="@+id/sensors_demo_button"-->
+                    <LinearLayout android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:tag="rssi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:tag="major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:tag="mpower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:tag="minor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:src="@drawable/beacon_gray"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:tag="mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#ff000000"
+                    android:text="TARGET"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:tag="rssi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:tag="major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:tag="mpower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:tag="minor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="198dp"
+            android:layout_height="100dp"
+            android:text="Assassinate!"
+            android:id="@+id/assassin_button"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/players"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="OTHER PLAYERS"
+                />
+
+            <Button
+                android:id="@+id/stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="STATISTICS"
+                />
+
+            <Button
+                android:id="@+id/characteristics_demo_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Change Beacon's Minor Demo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--Button-->
+      <!--android:id="@+id/update_demo_button"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginLeft="8dp"-->
+      <!--android:layout_marginRight="8dp"-->
+      <!--android:text="Update beacon's firmware demo"-->
+      <!--/>-->
+
+  <!--Button-->
+      <!--android:id="@+id/eddystone_demo_button"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginLeft="8dp"-->
+      <!--android:layout_marginRight="8dp"-->
+      <!--android:text="Eddystone Demo"-->
+      <!--/>-->
+
+  <!--Button-->
+      <!--android:id="@+id/nearables_demo_button"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginLeft="8dp"-->
+      <!--android:layout_marginRight="8dp"-->
+      <!--android:text="Nearables Demo"-->
+      <!--/>-->
+
+  <!--&lt;!&ndash;<Button&ndash;&gt;-->
+     <!--&lt;!&ndash;android:id="@+id/sensors_demo_button"&ndash;&gt;-->
      <!--android:layout_width="match_parent"-->
      <!--android:layout_height="wrap_content"-->
      <!--android:layout_marginLeft="8dp"-->
